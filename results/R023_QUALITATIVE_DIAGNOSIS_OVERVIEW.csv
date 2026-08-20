@@ -1,0 +1,10 @@
+metric,value
+test_rows,3372
+gate_errors,702
+gate_false_positives,258
+gate_false_negatives,444
+representative_cases,45
+residual_corrects_gate_errors,103
+direct_corrects_gate_errors,183
+domurls_corrects_gate_errors,411
+char_cnn_corrects_gate_errors,355

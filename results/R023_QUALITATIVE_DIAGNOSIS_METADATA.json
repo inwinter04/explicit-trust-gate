@@ -1,0 +1,12 @@
+{
+  "generated_utc": "2026-08-19T13:05:38Z",
+  "r024_predictions": "refine-logs\\R024_SIMPLICITY_STABILITY_PREDICTIONS.csv",
+  "r026_predictions": "refine-logs\\R026_DOMURLS_R025_FRONTIER_PREDICTIONS.csv",
+  "max_cases": 48,
+  "scope": "R023 qualitative diagnosis over averaged three-seed retained predictions",
+  "notes": [
+    "Final model is the explicit cross-attentive gate from R024 averaged over seeds.",
+    "Categories are heuristic discussion aids, not human-verified threat-intelligence labels.",
+    "DeepURLBench DNS/IP fields remain dataset-provided context, not verified point-in-time evidence."
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "generated_utc": "2026-08-19T08:32:53Z",
+  "script": "E:\\Desktop\\论文\\scripts\\run_r017_missing_ablation_diagnostic.py",
+  "script_sha256": "25376a467720c05d04b36323ea6fadc3b30cfaa1aa96117f292b0d8209c53d6f",
+  "dependency_r016_script": "E:\\Desktop\\论文\\scripts\\run_r016_missing_modality_diagnostic.py",
+  "dependency_r016_sha256": "9ea8c240e807bc56854a1fe1c5eb91d68085cc840cf9227c786cedb536bd52b5",
+  "with_dns": "data\\interim\\deepurlbench\\deepurlbench_with_dns_time_sample.csv",
+  "with_dns_sha256": "1ca9821eedab736527038f7b3f99a27c55fbe54a6670f7bfa506efc8cce1c748",
+  "seeds": [
+    20260708,
+    20260709,
+    20260710
+  ],
+  "missing_rates": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "dropout_prob": 0.5,
+  "device": "cuda",
+  "evaluation_type": "real_gt diagnostic; validation-only gate training; synthetic whole-view masking; not point-in-time C2 evidence because R015 failed",
+  "outputs": {
+    "metrics_csv": "refine-logs\\R017_MISSING_ABLATION_METRICS_20260819_083253.csv",
+    "diagnostics_csv": "refine-logs\\R017_MISSING_ABLATION_DIAGNOSTICS_20260819_083253.csv"
+  }
+}

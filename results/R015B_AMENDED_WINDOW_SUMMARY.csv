@@ -1,0 +1,3 @@
+window,window_hours,status,rows,outside_rows,outside_pct,missing_query_time,min_hours_after_t0,max_hours_after_t0
+strict_24h_historical,24.0,fail,1520,600,39.47,0,0.0053,24.8903
+declared_25h_amended,25.0,pass,1520,0,0.0,0,0.0053,24.8903

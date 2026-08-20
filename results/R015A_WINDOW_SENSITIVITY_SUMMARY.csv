@@ -1,0 +1,5 @@
+window_hours,status,rows,outside_rows,outside_pct,missing_query_time,min_hours_after_t0,max_hours_after_t0
+24,fail,1520,600,39.47,0,0.0053,24.8903
+24.5,fail,1520,600,39.47,0,0.0053,24.8903
+25,pass,1520,0,0.0,0,0.0053,24.8903
+26,pass,1520,0,0.0,0,0.0053,24.8903

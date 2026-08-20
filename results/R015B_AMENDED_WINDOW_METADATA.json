@@ -1,0 +1,21 @@
+{
+  "generated_utc": "2026-08-19T09:05:04Z",
+  "script": "E:\\Desktop\\论文\\scripts\\run_r015b_amended_window_provenance_audit.py",
+  "script_sha256": "3a779a7a12ffdf04cbe183c7ef7e35909d0f40022d86a63c4a0c54758127eb22",
+  "protocol": "refine-logs\\POINT_IN_TIME_PROTOCOL_AMENDMENT.md",
+  "protocol_sha256": "582b2aa541bc5abc9e074287ca6a8f80a4c80e1362cf5e50a0ae096db2fae11b",
+  "prospective_dir": "data\\raw\\2026-07-07",
+  "declared_window_hours": 25.0,
+  "strict_window_hours": 24.0,
+  "strict_24h_historical_status": "fail",
+  "strict_24h_historical_outside_rows": 600,
+  "amended_window_status": "pass",
+  "amended_window_outside_rows": 0,
+  "deepurlbench_dns_timing_status": "warn",
+  "overall_verdict": "warn",
+  "claim_impact": {
+    "prospective_protocol": "passes under the explicit 25h amendment for the current 2026-07-07 sample",
+    "strict_24h": "remains failed historical evidence",
+    "C2": "not fully supported because DeepURLBench DNS timing and final missing-modality evidence remain diagnostic/incomplete"
+  }
+}

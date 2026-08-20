@@ -1,0 +1,40 @@
+{
+  "generated_utc": "2026-08-19T12:46:27Z",
+  "data": "data\\interim\\deepurlbench\\deepurlbench_with_dns_time_sample.csv",
+  "seeds": [
+    20260819,
+    20260820,
+    20260821
+  ],
+  "bootstrap_iters": 500,
+  "domurls_status": "ok",
+  "domurls_bert": "amahdaouy/DomURLs_BERT",
+  "split_rows": {
+    "train": 10114,
+    "val": 3372,
+    "test": 3372
+  },
+  "subset_counts": {
+    "full_test": {
+      "rows": 3372,
+      "positives": 1683
+    },
+    "lex_benign_shape": {
+      "rows": 2018,
+      "positives": 932
+    },
+    "lex_benign_shape_multi_ip": {
+      "rows": 606,
+      "positives": 171
+    },
+    "multi_ip_dns": {
+      "rows": 952,
+      "positives": 285
+    },
+    "ttl_low": {
+      "rows": 648,
+      "positives": 218
+    }
+  },
+  "r025_aggregate": "refine-logs\\R025_INDEPENDENT_CONFLICT_AGGREGATE.csv"
+}

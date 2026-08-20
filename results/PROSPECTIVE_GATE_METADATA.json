@@ -1,0 +1,185 @@
+{
+  "run": "PROSPECTIVE_GATE",
+  "generated_at": "20260820_032235",
+  "inputs_sha256": {
+    "deepurlbench_sample": "1ca9821eedab736527038f7b3f99a27c55fbe54a6670f7bfa506efc8cce1c748",
+    "prospective_cohort": "cfbe247c22db0f1b0dd218342ef828f4502d8b1c77f63ab5cf4238c5b207f662",
+    "prospective_dns": "66eaf3552173e74881c2b2f85c737df10c92f447f6881072eef3c89376c1a15a",
+    "script": "e4139732a425a94f5f9e52eac0f7d6535a3ddf6f92a8e11e9c170ff06adc0a30"
+  },
+  "seeds": [
+    20260819,
+    20260820,
+    20260821
+  ],
+  "bootstrap_iters": 1000,
+  "prospective_rows": 200,
+  "prospective_positives": 100,
+  "behavior_view_diagnostics": {
+    "ttl_unique_values": [
+      1.0
+    ],
+    "ttl_constant": true,
+    "ttl_min_seconds": 1.0,
+    "ttl_max_seconds": 1.0,
+    "max_unique_ips_per_domain": 1,
+    "mean_unique_ips_per_domain": 0.995,
+    "domains_with_multiple_unique_ips": 0,
+    "unique_ipv4": 199,
+    "benchmark_198_18_0_0_15_fraction": 1.0,
+    "special_union_fraction": 1.0
+  },
+  "gate_diagnostics": [
+    {
+      "seed": 20260819,
+      "mean_g_lex": 0.999996,
+      "choose_lex_pct": 100.0
+    },
+    {
+      "seed": 20260820,
+      "mean_g_lex": 0.999998,
+      "choose_lex_pct": 100.0
+    },
+    {
+      "seed": 20260821,
+      "mean_g_lex": 0.999994,
+      "choose_lex_pct": 100.0
+    }
+  ],
+  "mean_g_lex_overall": 0.999996,
+  "aggregate": [
+    {
+      "system": "lexical_only",
+      "AUPRC": 0.7539250616239879,
+      "FPR@95TPR": 0.46,
+      "macro_F1": 0.7079843233689387,
+      "ECE": 0.14491612705813192
+    },
+    {
+      "system": "dns_behavior_only",
+      "AUPRC": 0.5025125628140703,
+      "FPR@95TPR": 0.99,
+      "macro_F1": 0.3333333333333333,
+      "ECE": 0.49873551057614757
+    },
+    {
+      "system": "fixed_average",
+      "AUPRC": 0.7539817008557411,
+      "FPR@95TPR": 0.46,
+      "macro_F1": 0.34434915063412697,
+      "ECE": 0.20108779197352278
+    },
+    {
+      "system": "cross_attentive_gate_mean",
+      "AUPRC": 0.7539250616239879,
+      "FPR@95TPR": 0.46,
+      "macro_F1": 0.7079843233689387,
+      "ECE": 0.14491204351186754
+    }
+  ],
+  "per_seed": [
+    {
+      "seed": 20260819,
+      "system": "lexical_only",
+      "AUPRC": 0.7539250616239879,
+      "FPR@95TPR": 0.46,
+      "macro_F1": 0.7079843233689387,
+      "ECE": 0.14491612705813192
+    },
+    {
+      "seed": 20260819,
+      "system": "dns_behavior_only",
+      "AUPRC": 0.5025125628140703,
+      "FPR@95TPR": 0.99,
+      "macro_F1": 0.3333333333333333,
+      "ECE": 0.49873551057614757
+    },
+    {
+      "seed": 20260819,
+      "system": "fixed_average",
+      "AUPRC": 0.7539817008557411,
+      "FPR@95TPR": 0.46,
+      "macro_F1": 0.34434915063412697,
+      "ECE": 0.20108779197352278
+    },
+    {
+      "seed": 20260819,
+      "system": "cross_attentive_gate",
+      "AUPRC": 0.7539250616239879,
+      "FPR@95TPR": 0.46,
+      "macro_F1": 0.7079843233689387,
+      "ECE": 0.14491163924336434
+    },
+    {
+      "seed": 20260820,
+      "system": "lexical_only",
+      "AUPRC": 0.7539250616239879,
+      "FPR@95TPR": 0.46,
+      "macro_F1": 0.7079843233689387,
+      "ECE": 0.14491612705813192
+    },
+    {
+      "seed": 20260820,
+      "system": "dns_behavior_only",
+      "AUPRC": 0.5025125628140703,
+      "FPR@95TPR": 0.99,
+      "macro_F1": 0.3333333333333333,
+      "ECE": 0.49873551057614757
+    },
+    {
+      "seed": 20260820,
+      "system": "fixed_average",
+      "AUPRC": 0.7539817008557411,
+      "FPR@95TPR": 0.46,
+      "macro_F1": 0.34434915063412697,
+      "ECE": 0.20108779197352278
+    },
+    {
+      "seed": 20260820,
+      "system": "cross_attentive_gate",
+      "AUPRC": 0.7539250616239879,
+      "FPR@95TPR": 0.46,
+      "macro_F1": 0.7079843233689387,
+      "ECE": 0.14491538263857365
+    },
+    {
+      "seed": 20260821,
+      "system": "lexical_only",
+      "AUPRC": 0.7539250616239879,
+      "FPR@95TPR": 0.46,
+      "macro_F1": 0.7079843233689387,
+      "ECE": 0.14491612705813192
+    },
+    {
+      "seed": 20260821,
+      "system": "dns_behavior_only",
+      "AUPRC": 0.5025125628140703,
+      "FPR@95TPR": 0.99,
+      "macro_F1": 0.3333333333333333,
+      "ECE": 0.49873551057614757
+    },
+    {
+      "seed": 20260821,
+      "system": "fixed_average",
+      "AUPRC": 0.7539817008557411,
+      "FPR@95TPR": 0.46,
+      "macro_F1": 0.34434915063412697,
+      "ECE": 0.20108779197352278
+    },
+    {
+      "seed": 20260821,
+      "system": "cross_attentive_gate",
+      "AUPRC": 0.7539250616239879,
+      "FPR@95TPR": 0.46,
+      "macro_F1": 0.7079843233689387,
+      "ECE": 0.1449091149866581
+    }
+  ],
+  "bootstrap": {
+    "gate_minus_lexical_mean_delta_AUPRC": 0.0,
+    "ci95_low": 0.0,
+    "ci95_high": 0.0,
+    "iterations": 1000
+  },
+  "scope": "diagnostic cross-sample transfer check; small sample, approximate feature mapping; not deployment evidence"
+}

@@ -1,0 +1,28 @@
+{
+  "generated_utc": "2026-08-19T08:23:20Z",
+  "script": "E:\\Desktop\\论文\\scripts\\run_r016_missing_modality_diagnostic.py",
+  "script_sha256": "9ea8c240e807bc56854a1fe1c5eb91d68085cc840cf9227c786cedb536bd52b5",
+  "with_dns": "data\\interim\\deepurlbench\\deepurlbench_with_dns_time_sample.csv",
+  "with_dns_sha256": "1ca9821eedab736527038f7b3f99a27c55fbe54a6670f7bfa506efc8cce1c748",
+  "without_dns": "data\\interim\\deepurlbench\\deepurlbench_without_dns_time_sample.csv",
+  "without_dns_sha256": "7b8860c0bb0494093a3d13f5c54fbb9e00dd64f5f06c5e00238ed93521b48a26",
+  "seeds": [
+    20260708,
+    20260709,
+    20260710
+  ],
+  "missing_rates": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "device": "cuda",
+  "evaluation_type": "real_gt diagnostic; synthetic whole-view behavior masking; not point-in-time C2 evidence because R015 failed",
+  "cross_attention_auprc_slope_per_missing_rate": -0.011393524505862033,
+  "outputs": {
+    "metrics_csv": "refine-logs\\R016_MISSING_MODALITY_METRICS_20260819_082320.csv",
+    "diagnostics_csv": "refine-logs\\R016_MISSING_MODALITY_DIAGNOSTICS_20260819_082320.csv"
+  }
+}

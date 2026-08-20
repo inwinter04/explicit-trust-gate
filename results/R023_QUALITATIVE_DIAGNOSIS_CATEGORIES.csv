@@ -1,0 +1,13 @@
+error_type,primary_category,rows,mean_gate_prob,mean_lex_prob,mean_dns_prob,mean_gate_lex_trust,corrected_by_residual,corrected_by_direct,corrected_by_domurls,corrected_by_char_cnn
+FN,FN_lex_benign_shape,152,0.3382,0.3113,0.4732,0.6593,17,38,70,77
+FN,FN_both_experts_low,151,0.3539,0.3338,0.4163,0.6572,28,57,112,110
+FN,FN_lex_benign_multi_ip,68,0.361,0.3496,0.4069,0.594,0,6,44,43
+FN,FN_borderline_or_label_noise,35,0.4638,0.5511,0.3827,0.4918,6,9,30,24
+FN,FN_gate_overtrusts_lexical,34,0.2978,0.2866,0.6184,0.914,0,0,24,23
+FN,FN_ttl_low_missed,4,0.215,0.5766,0.2146,0.0019,0,0,4,4
+FP,FP_lexical_false_alarm,119,0.6827,0.7196,0.4032,0.8425,14,17,49,30
+FP,FP_both_experts_high,81,0.6243,0.6335,0.586,0.6296,19,43,45,24
+FP,FP_dns_false_alarm,41,0.5479,0.3494,0.61,0.2737,13,7,26,15
+FP,FP_borderline_or_feed_noise,10,0.5242,0.7073,0.3854,0.4228,3,0,3,4
+FP,FP_benign_multi_ip,6,0.5371,0.6622,0.4578,0.3764,3,6,3,1
+FP,FP_ttl_low_benign,1,0.578,0.7329,0.4959,0.3236,0,0,1,0
