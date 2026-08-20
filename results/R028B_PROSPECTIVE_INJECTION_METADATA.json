@@ -1,0 +1,70 @@
+{
+  "run": "R028B_PROSPECTIVE_INJECTION",
+  "generated_at": "20260820_082239",
+  "inputs_sha256": {
+    "deepurlbench_sample": "1ca9821eedab736527038f7b3f99a27c55fbe54a6670f7bfa506efc8cce1c748",
+    "prospective_cohort": "cfbe247c22db0f1b0dd218342ef828f4502d8b1c77f63ab5cf4238c5b207f662",
+    "prospective_dns": "66eaf3552173e74881c2b2f85c737df10c92f447f6881072eef3c89376c1a15a",
+    "script": "9acef9a7431583971ca713db991a67fadb93bc377f3b3941348163375c3c051e"
+  },
+  "seeds": [
+    20260819,
+    20260820,
+    20260821
+  ],
+  "injection_seed": 20260820,
+  "injection_rules": {
+    "injected_ttl_informative": "aligned with DeepURLBench label-TTL relationship (malicious median ~3600s vs benign ~600s): malicious TTL ~ exp(U(ln3600, ln21601)); benign TTL ~ exp(U(ln30, ln601)); ip features unchanged",
+    "injected_ip_diversity_informative": "benign: 2-5 unique IPs, first octets from {8,34,52,91,104,125,146,193}; malicious: single IP 91.x; TTL unchanged"
+  },
+  "conditions_diagnostics": {
+    "original_degenerate": {
+      "rows": 200,
+      "positives": 100,
+      "ttl_unique_values": [
+        1.0
+      ],
+      "ttl_constant": true,
+      "ttl_min_seconds": 1.0,
+      "ttl_max_seconds": 1.0,
+      "max_unique_ips_per_domain": 1,
+      "mean_unique_ips_per_domain": 0.995,
+      "domains_with_multiple_unique_ips": 0
+    },
+    "injected_ttl_informative": {
+      "rows": 200,
+      "positives": 100,
+      "ttl_unique_values": [
+        30.025271359884492,
+        30.15835228989019,
+        30.592784357594734,
+        31.014075827804664,
+        31.173810943775088,
+        33.305799775620535,
+        37.03772318810123,
+        38.66401603779554
+      ],
+      "ttl_constant": false,
+      "ttl_min_seconds": 30.025271359884492,
+      "ttl_max_seconds": 21550.90150672186,
+      "max_unique_ips_per_domain": 1,
+      "mean_unique_ips_per_domain": 0.995,
+      "domains_with_multiple_unique_ips": 0
+    },
+    "injected_ip_diversity_informative": {
+      "rows": 200,
+      "positives": 100,
+      "ttl_unique_values": [
+        1.0
+      ],
+      "ttl_constant": true,
+      "ttl_min_seconds": 1.0,
+      "ttl_max_seconds": 1.0,
+      "max_unique_ips_per_domain": 5,
+      "mean_unique_ips_per_domain": 2.235,
+      "domains_with_multiple_unique_ips": 100
+    }
+  },
+  "device": "cuda",
+  "scope": "controlled counterfactual on verified-timing sample; diagnostic mechanism-capacity evidence, not a deployment or in-the-wild claim"
+}

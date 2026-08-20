@@ -1,0 +1,21 @@
+{
+  "run": "R028A_INFORMATIVE_SUBSET",
+  "generated_at": "20260820_082120",
+  "inputs_sha256": {
+    "predictions": "794ccd29d20eebee9cfb29901edebbe8e6efb7be52a05fb48c2ab48f617f2154"
+  },
+  "seeds": [
+    20260819,
+    20260820,
+    20260821
+  ],
+  "subsets": [
+    "full_test",
+    "multi_ip_dns",
+    "lex_benign_shape_multi_ip",
+    "ttl_informative"
+  ],
+  "bootstrap_iters": 300,
+  "rng_seed": 20260820,
+  "scope": "diagnostic retrospective subset analysis; subsets pre-registered in EXPERIMENT_PLAN.md; no new training"
+}

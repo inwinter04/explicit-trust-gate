@@ -1,0 +1,21 @@
+{
+  "run": "R027_GATE_TRUST_ROUTING",
+  "generated_at": "20260820_082109",
+  "inputs_sha256": {
+    "predictions": "794ccd29d20eebee9cfb29901edebbe8e6efb7be52a05fb48c2ab48f617f2154",
+    "cases": "641668bfbb46a20aed8b611f194f236bb5ae2e1a9a5127b5c9b839d11b6e3bee"
+  },
+  "seeds": [
+    20260819,
+    20260820,
+    20260821
+  ],
+  "deltas": [
+    0.05,
+    0.1,
+    0.2
+  ],
+  "bootstrap_iters": 300,
+  "rng_seed": 20260820,
+  "scope": "diagnostic analysis of retained R024 predictions; no new training; routing accuracy is a mechanism-use metric, not a detection claim"
+}

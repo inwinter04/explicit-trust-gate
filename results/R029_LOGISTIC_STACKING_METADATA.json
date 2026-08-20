@@ -1,0 +1,15 @@
+{
+  "run": "R029_LOGISTIC_STACKING",
+  "generated_at": "20260820_083229",
+  "inputs_sha256": {
+    "sample": "1ca9821eedab736527038f7b3f99a27c55fbe54a6670f7bfa506efc8cce1c748"
+  },
+  "variants": [
+    "prob",
+    "logit",
+    "prob_interaction"
+  ],
+  "c": 1.0,
+  "random_state": 20260708,
+  "scope": "classic fusion baseline over the same frozen experts as R024; deterministic; not a new model"
+}

@@ -1,0 +1,6 @@
+use_case,tier,n_alarms_mean,precision_mean,coverage_mean
+behavior_alarms,all_alarms,6.0,1.0,0.0035650623885918
+behavior_alarms,high_trust,6.0,1.0,0.0035650623885918
+lexical_alarms,all_alarms,306.0,0.954248366013072,0.17349970291146763
+lexical_alarms,high_trust,305.6666666666667,0.9552912604021572,0.17349970291146763
+lexical_alarms,mid_trust,1.0,0.0,0.0
