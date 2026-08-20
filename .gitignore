@@ -1,0 +1,10 @@
+# Data is never part of this repository.
+data/
+
+# Python caches and run outputs.
+__pycache__/
+*.py[cod]
+.hf_cache/
+*.log
+refine-logs/
+tables/
