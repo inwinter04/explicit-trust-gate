@@ -24,4 +24,4 @@ research use.
 | `R029_LOGISTIC_STACKING_METRICS.csv` + `R029_LOGISTIC_STACKING_METADATA.json` | Table 1 (classic fusion baseline) |
 | `R030_GATE_AUDIT_USE_CASE_AGGREGATE.csv` + `R030_GATE_AUDIT_USE_CASE_METRICS.csv` + `R030_GATE_AUDIT_USE_CASE_METADATA.json` | Discussion limitation 6 (g-conditioned alarm audit, null result) |
 | `PROSPECTIVE_GATE_METRICS.csv` + `PROSPECTIVE_GATE_METADATA.json` | Discussion (prospective lexical fallback) |
-| `EXPERIMENT_TRACKER.md` | Full experiment log (R001-R026 + prospective) |
+| `EXPERIMENT_TRACKER.md` | Full experiment log (R001-R030 + prospective) |
