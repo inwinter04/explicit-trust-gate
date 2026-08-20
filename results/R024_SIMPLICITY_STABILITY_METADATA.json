@@ -1,0 +1,77 @@
+{
+  "generated_utc": "2026-08-19T12:16:03Z",
+  "script": "E:\\Desktop\\论文\\scripts\\run_r024_simplicity_stability.py",
+  "script_sha256": "84e4f9d4c3b9c5ec5ecec49aee99a82b0707dadea0c9307e25701373dd426b2f",
+  "sample": "data\\interim\\deepurlbench\\deepurlbench_with_dns_time_sample.csv",
+  "sample_sha256": "1ca9821eedab736527038f7b3f99a27c55fbe54a6670f7bfa506efc8cce1c748",
+  "seeds": [
+    20260819,
+    20260820,
+    20260821
+  ],
+  "bootstrap_iters": 300,
+  "device": "cuda",
+  "scope": "R024 multi-seed stability check for R020/R021 simplicity variants",
+  "split_rows": {
+    "train": 10114,
+    "val": 3372,
+    "test": 3372
+  },
+  "split_domain_overlap": [
+    {
+      "left_split": "train",
+      "right_split": "val",
+      "left_domains": 9808,
+      "right_domains": 3300,
+      "overlap_domains": 26,
+      "overlap_pct_of_right": 0.7879
+    },
+    {
+      "left_split": "train",
+      "right_split": "test",
+      "left_domains": 9808,
+      "right_domains": 3059,
+      "overlap_domains": 11,
+      "overlap_pct_of_right": 0.3596
+    },
+    {
+      "left_split": "val",
+      "right_split": "test",
+      "left_domains": 3300,
+      "right_domains": 3059,
+      "overlap_domains": 66,
+      "overlap_pct_of_right": 2.1576
+    }
+  ],
+  "subsets": {
+    "full_test": {
+      "rows": 3372,
+      "positives": 1683
+    },
+    "model_high_conflict": {
+      "rows": 96,
+      "positives": 28
+    },
+    "lex_benign_shape": {
+      "rows": 2018,
+      "positives": 932
+    },
+    "multi_ip_dns": {
+      "rows": 952,
+      "positives": 285
+    },
+    "ttl_low": {
+      "rows": 648,
+      "positives": 218
+    },
+    "lex_benign_shape_multi_ip": {
+      "rows": 606,
+      "positives": 171
+    }
+  },
+  "notes": [
+    "DeepURLBench DNS/IP remains dataset-provided context, not verified point-in-time behavior evidence.",
+    "model_high_conflict is model-conditioned and diagnostic only.",
+    "rule-defined subsets are independent of model predictions but still heuristic."
+  ]
+}

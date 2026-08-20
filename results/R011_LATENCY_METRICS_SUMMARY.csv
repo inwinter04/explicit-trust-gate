@@ -1,0 +1,7 @@
+system,trainable_parameters,per_query_cpu_ms_median,batch_cpu_rows_per_second_median,peak_cuda_mem_mb
+lexical_only,106507,0.27,16277.7,
+dns_behavior_only,13,0.47,4826105.6,
+fixed_average,0,0.83,16490.8,
+cross_attentive_gate,7041,1.47,16294.0,42.874
+residual_gate,9218,1.6,16690.7,42.884
+direct_classifier,9218,1.49,16360.1,42.884

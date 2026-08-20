@@ -1,0 +1,719 @@
+{
+  "run": "R011",
+  "generated_at": "20260820_030617",
+  "sample": "data\\interim\\deepurlbench\\deepurlbench_with_dns_time_sample.csv",
+  "sample_sha256": "1ca9821eedab736527038f7b3f99a27c55fbe54a6670f7bfa506efc8cce1c748",
+  "script_sha256": "6d5ae0bdc3287755d18fe9ff1fdacf1deccb8767e648e8dc335edf8b19b9b0bf",
+  "seeds": [
+    20260819,
+    20260820,
+    20260821
+  ],
+  "timing_seed": 20260819,
+  "devices": [
+    "cpu",
+    "cuda"
+  ],
+  "batch_sizes": [
+    1,
+    16,
+    64,
+    256,
+    3372
+  ],
+  "metric_sanity": [
+    {
+      "seed": 20260819,
+      "cross_attentive_gate_AUPRC": 0.8784610353857567,
+      "residual_gate_AUPRC": 0.8896655041181418,
+      "direct_classifier_AUPRC": 0.8963045805331686
+    },
+    {
+      "seed": 20260820,
+      "cross_attentive_gate_AUPRC": 0.8807183034383679,
+      "residual_gate_AUPRC": 0.8873142027112837,
+      "direct_classifier_AUPRC": 0.8983108377043574
+    },
+    {
+      "seed": 20260821,
+      "cross_attentive_gate_AUPRC": 0.8798243778523116,
+      "residual_gate_AUPRC": 0.8882815067861252,
+      "direct_classifier_AUPRC": 0.8991733629441487
+    }
+  ],
+  "latency_rows": [
+    {
+      "system": "lexical_only",
+      "device": "cpu",
+      "batch_size": 1,
+      "median_seconds_per_batch": 0.00047524999990855576,
+      "ms_per_sample": 0.4752,
+      "rows_per_second": 2104.2,
+      "trainable_parameters": 106507
+    },
+    {
+      "system": "lexical_only",
+      "device": "cpu",
+      "batch_size": 16,
+      "median_seconds_per_batch": 0.001480249999985972,
+      "ms_per_sample": 0.0925,
+      "rows_per_second": 10809.0,
+      "trainable_parameters": 106507
+    },
+    {
+      "system": "lexical_only",
+      "device": "cpu",
+      "batch_size": 64,
+      "median_seconds_per_batch": 0.003991600000063045,
+      "ms_per_sample": 0.0624,
+      "rows_per_second": 16033.7,
+      "trainable_parameters": 106507
+    },
+    {
+      "system": "lexical_only",
+      "device": "cpu",
+      "batch_size": 256,
+      "median_seconds_per_batch": 0.014310550000118383,
+      "ms_per_sample": 0.0559,
+      "rows_per_second": 17888.9,
+      "trainable_parameters": 106507
+    },
+    {
+      "system": "lexical_only",
+      "device": "cpu",
+      "batch_size": 3372,
+      "median_seconds_per_batch": 0.1980322999997952,
+      "ms_per_sample": 0.0587,
+      "rows_per_second": 17027.5,
+      "trainable_parameters": 106507
+    },
+    {
+      "system": "lexical_only",
+      "device": "cuda",
+      "batch_size": 1,
+      "median_seconds_per_batch": 0.00034605000018927967,
+      "ms_per_sample": 0.3461,
+      "rows_per_second": 2889.8,
+      "trainable_parameters": 106507
+    },
+    {
+      "system": "lexical_only",
+      "device": "cuda",
+      "batch_size": 16,
+      "median_seconds_per_batch": 0.0014847000002191635,
+      "ms_per_sample": 0.0928,
+      "rows_per_second": 10776.6,
+      "trainable_parameters": 106507
+    },
+    {
+      "system": "lexical_only",
+      "device": "cuda",
+      "batch_size": 64,
+      "median_seconds_per_batch": 0.004002499999842257,
+      "ms_per_sample": 0.0625,
+      "rows_per_second": 15990.0,
+      "trainable_parameters": 106507
+    },
+    {
+      "system": "lexical_only",
+      "device": "cuda",
+      "batch_size": 256,
+      "median_seconds_per_batch": 0.014752100000350765,
+      "ms_per_sample": 0.0576,
+      "rows_per_second": 17353.5,
+      "trainable_parameters": 106507
+    },
+    {
+      "system": "lexical_only",
+      "device": "cuda",
+      "batch_size": 3372,
+      "median_seconds_per_batch": 0.20000984999978755,
+      "ms_per_sample": 0.0593,
+      "rows_per_second": 16859.2,
+      "trainable_parameters": 106507
+    },
+    {
+      "system": "dns_behavior_only",
+      "device": "cpu",
+      "batch_size": 1,
+      "median_seconds_per_batch": 0.00047979999999370193,
+      "ms_per_sample": 0.4798,
+      "rows_per_second": 2084.2,
+      "trainable_parameters": 13
+    },
+    {
+      "system": "dns_behavior_only",
+      "device": "cpu",
+      "batch_size": 16,
+      "median_seconds_per_batch": 0.0004981999995834485,
+      "ms_per_sample": 0.0311,
+      "rows_per_second": 32115.6,
+      "trainable_parameters": 13
+    },
+    {
+      "system": "dns_behavior_only",
+      "device": "cpu",
+      "batch_size": 64,
+      "median_seconds_per_batch": 0.0005020999997213949,
+      "ms_per_sample": 0.0078,
+      "rows_per_second": 127464.6,
+      "trainable_parameters": 13
+    },
+    {
+      "system": "dns_behavior_only",
+      "device": "cpu",
+      "batch_size": 256,
+      "median_seconds_per_batch": 0.0005126500004735135,
+      "ms_per_sample": 0.002,
+      "rows_per_second": 499366.0,
+      "trainable_parameters": 13
+    },
+    {
+      "system": "dns_behavior_only",
+      "device": "cpu",
+      "batch_size": 3372,
+      "median_seconds_per_batch": 0.0007189499997366511,
+      "ms_per_sample": 0.0002,
+      "rows_per_second": 4690173.2,
+      "trainable_parameters": 13
+    },
+    {
+      "system": "dns_behavior_only",
+      "device": "cuda",
+      "batch_size": 1,
+      "median_seconds_per_batch": 0.0005005499997423613,
+      "ms_per_sample": 0.5005,
+      "rows_per_second": 1997.8,
+      "trainable_parameters": 13
+    },
+    {
+      "system": "dns_behavior_only",
+      "device": "cuda",
+      "batch_size": 16,
+      "median_seconds_per_batch": 0.0005090500003461784,
+      "ms_per_sample": 0.0318,
+      "rows_per_second": 31431.1,
+      "trainable_parameters": 13
+    },
+    {
+      "system": "dns_behavior_only",
+      "device": "cuda",
+      "batch_size": 64,
+      "median_seconds_per_batch": 0.0005089000001134991,
+      "ms_per_sample": 0.008,
+      "rows_per_second": 125761.4,
+      "trainable_parameters": 13
+    },
+    {
+      "system": "dns_behavior_only",
+      "device": "cuda",
+      "batch_size": 256,
+      "median_seconds_per_batch": 0.0005198500002734363,
+      "ms_per_sample": 0.002,
+      "rows_per_second": 492449.7,
+      "trainable_parameters": 13
+    },
+    {
+      "system": "dns_behavior_only",
+      "device": "cuda",
+      "batch_size": 3372,
+      "median_seconds_per_batch": 0.0007368000001406472,
+      "ms_per_sample": 0.0002,
+      "rows_per_second": 4576547.2,
+      "trainable_parameters": 13
+    },
+    {
+      "system": "fixed_average",
+      "device": "cpu",
+      "batch_size": 1,
+      "median_seconds_per_batch": 0.0008305500000460597,
+      "ms_per_sample": 0.8306,
+      "rows_per_second": 1204.0,
+      "trainable_parameters": 0
+    },
+    {
+      "system": "fixed_average",
+      "device": "cpu",
+      "batch_size": 16,
+      "median_seconds_per_batch": 0.0018200499998783926,
+      "ms_per_sample": 0.1138,
+      "rows_per_second": 8791.0,
+      "trainable_parameters": 0
+    },
+    {
+      "system": "fixed_average",
+      "device": "cpu",
+      "batch_size": 64,
+      "median_seconds_per_batch": 0.004754449999836652,
+      "ms_per_sample": 0.0743,
+      "rows_per_second": 13461.1,
+      "trainable_parameters": 0
+    },
+    {
+      "system": "fixed_average",
+      "device": "cpu",
+      "batch_size": 256,
+      "median_seconds_per_batch": 0.0159423499994773,
+      "ms_per_sample": 0.0623,
+      "rows_per_second": 16057.9,
+      "trainable_parameters": 0
+    },
+    {
+      "system": "fixed_average",
+      "device": "cpu",
+      "batch_size": 3372,
+      "median_seconds_per_batch": 0.2028994000002058,
+      "ms_per_sample": 0.0602,
+      "rows_per_second": 16619.1,
+      "trainable_parameters": 0
+    },
+    {
+      "system": "fixed_average",
+      "device": "cuda",
+      "batch_size": 1,
+      "median_seconds_per_batch": 0.0008729000001039822,
+      "ms_per_sample": 0.8729,
+      "rows_per_second": 1145.6,
+      "trainable_parameters": 0
+    },
+    {
+      "system": "fixed_average",
+      "device": "cuda",
+      "batch_size": 16,
+      "median_seconds_per_batch": 0.0018512999999984459,
+      "ms_per_sample": 0.1157,
+      "rows_per_second": 8642.6,
+      "trainable_parameters": 0
+    },
+    {
+      "system": "fixed_average",
+      "device": "cuda",
+      "batch_size": 64,
+      "median_seconds_per_batch": 0.004955399999744259,
+      "ms_per_sample": 0.0774,
+      "rows_per_second": 12915.2,
+      "trainable_parameters": 0
+    },
+    {
+      "system": "fixed_average",
+      "device": "cuda",
+      "batch_size": 256,
+      "median_seconds_per_batch": 0.015199649999885878,
+      "ms_per_sample": 0.0594,
+      "rows_per_second": 16842.5,
+      "trainable_parameters": 0
+    },
+    {
+      "system": "fixed_average",
+      "device": "cuda",
+      "batch_size": 3372,
+      "median_seconds_per_batch": 0.20571920000020327,
+      "ms_per_sample": 0.061,
+      "rows_per_second": 16391.3,
+      "trainable_parameters": 0
+    },
+    {
+      "system": "cross_attentive_gate",
+      "device": "cpu",
+      "batch_size": 1,
+      "median_seconds_per_batch": 0.001469499999529944,
+      "ms_per_sample": 1.4695,
+      "rows_per_second": 680.5,
+      "trainable_parameters": 7041
+    },
+    {
+      "system": "cross_attentive_gate",
+      "device": "cpu",
+      "batch_size": 16,
+      "median_seconds_per_batch": 0.0027384499999243417,
+      "ms_per_sample": 0.1712,
+      "rows_per_second": 5842.7,
+      "trainable_parameters": 7041
+    },
+    {
+      "system": "cross_attentive_gate",
+      "device": "cpu",
+      "batch_size": 64,
+      "median_seconds_per_batch": 0.0058675999998740735,
+      "ms_per_sample": 0.0917,
+      "rows_per_second": 10907.4,
+      "trainable_parameters": 7041
+    },
+    {
+      "system": "cross_attentive_gate",
+      "device": "cpu",
+      "batch_size": 256,
+      "median_seconds_per_batch": 0.017862699999568576,
+      "ms_per_sample": 0.0698,
+      "rows_per_second": 14331.5,
+      "trainable_parameters": 7041
+    },
+    {
+      "system": "cross_attentive_gate",
+      "device": "cpu",
+      "batch_size": 3372,
+      "median_seconds_per_batch": 0.2149093000002722,
+      "ms_per_sample": 0.0637,
+      "rows_per_second": 15690.3,
+      "trainable_parameters": 7041
+    },
+    {
+      "system": "cross_attentive_gate",
+      "device": "cuda",
+      "batch_size": 1,
+      "median_seconds_per_batch": 0.004949349999606056,
+      "ms_per_sample": 4.9493,
+      "rows_per_second": 202.0,
+      "trainable_parameters": 7041
+    },
+    {
+      "system": "cross_attentive_gate",
+      "device": "cuda",
+      "batch_size": 16,
+      "median_seconds_per_batch": 0.00675649999993766,
+      "ms_per_sample": 0.4223,
+      "rows_per_second": 2368.1,
+      "trainable_parameters": 7041
+    },
+    {
+      "system": "cross_attentive_gate",
+      "device": "cuda",
+      "batch_size": 64,
+      "median_seconds_per_batch": 0.0119321500001206,
+      "ms_per_sample": 0.1864,
+      "rows_per_second": 5363.7,
+      "trainable_parameters": 7041
+    },
+    {
+      "system": "cross_attentive_gate",
+      "device": "cuda",
+      "batch_size": 256,
+      "median_seconds_per_batch": 0.023623999999927037,
+      "ms_per_sample": 0.0923,
+      "rows_per_second": 10836.4,
+      "trainable_parameters": 7041
+    },
+    {
+      "system": "cross_attentive_gate",
+      "device": "cuda",
+      "batch_size": 3372,
+      "median_seconds_per_batch": 0.2481851499996992,
+      "ms_per_sample": 0.0736,
+      "rows_per_second": 13586.6,
+      "trainable_parameters": 7041
+    },
+    {
+      "system": "residual_gate",
+      "device": "cpu",
+      "batch_size": 1,
+      "median_seconds_per_batch": 0.0015966500000104134,
+      "ms_per_sample": 1.5967,
+      "rows_per_second": 626.3,
+      "trainable_parameters": 9218
+    },
+    {
+      "system": "residual_gate",
+      "device": "cpu",
+      "batch_size": 16,
+      "median_seconds_per_batch": 0.0028361500003484252,
+      "ms_per_sample": 0.1773,
+      "rows_per_second": 5641.5,
+      "trainable_parameters": 9218
+    },
+    {
+      "system": "residual_gate",
+      "device": "cpu",
+      "batch_size": 64,
+      "median_seconds_per_batch": 0.006397350000042934,
+      "ms_per_sample": 0.1,
+      "rows_per_second": 10004.1,
+      "trainable_parameters": 9218
+    },
+    {
+      "system": "residual_gate",
+      "device": "cpu",
+      "batch_size": 256,
+      "median_seconds_per_batch": 0.018659549999938463,
+      "ms_per_sample": 0.0729,
+      "rows_per_second": 13719.5,
+      "trainable_parameters": 9218
+    },
+    {
+      "system": "residual_gate",
+      "device": "cpu",
+      "batch_size": 3372,
+      "median_seconds_per_batch": 0.20580315000006522,
+      "ms_per_sample": 0.061,
+      "rows_per_second": 16384.6,
+      "trainable_parameters": 9218
+    },
+    {
+      "system": "residual_gate",
+      "device": "cuda",
+      "batch_size": 1,
+      "median_seconds_per_batch": 0.00475295000069309,
+      "ms_per_sample": 4.753,
+      "rows_per_second": 210.4,
+      "trainable_parameters": 9218
+    },
+    {
+      "system": "residual_gate",
+      "device": "cuda",
+      "batch_size": 16,
+      "median_seconds_per_batch": 0.006965549999677023,
+      "ms_per_sample": 0.4353,
+      "rows_per_second": 2297.0,
+      "trainable_parameters": 9218
+    },
+    {
+      "system": "residual_gate",
+      "device": "cuda",
+      "batch_size": 64,
+      "median_seconds_per_batch": 0.011245599999710976,
+      "ms_per_sample": 0.1757,
+      "rows_per_second": 5691.1,
+      "trainable_parameters": 9218
+    },
+    {
+      "system": "residual_gate",
+      "device": "cuda",
+      "batch_size": 256,
+      "median_seconds_per_batch": 0.024495850000221253,
+      "ms_per_sample": 0.0957,
+      "rows_per_second": 10450.7,
+      "trainable_parameters": 9218
+    },
+    {
+      "system": "residual_gate",
+      "device": "cuda",
+      "batch_size": 3372,
+      "median_seconds_per_batch": 0.25311375000001135,
+      "ms_per_sample": 0.0751,
+      "rows_per_second": 13322.1,
+      "trainable_parameters": 9218
+    },
+    {
+      "system": "direct_classifier",
+      "device": "cpu",
+      "batch_size": 1,
+      "median_seconds_per_batch": 0.0015375500001937326,
+      "ms_per_sample": 1.5376,
+      "rows_per_second": 650.4,
+      "trainable_parameters": 9218
+    },
+    {
+      "system": "direct_classifier",
+      "device": "cpu",
+      "batch_size": 16,
+      "median_seconds_per_batch": 0.0028075000004719186,
+      "ms_per_sample": 0.1755,
+      "rows_per_second": 5699.0,
+      "trainable_parameters": 9218
+    },
+    {
+      "system": "direct_classifier",
+      "device": "cpu",
+      "batch_size": 64,
+      "median_seconds_per_batch": 0.005837850000261824,
+      "ms_per_sample": 0.0912,
+      "rows_per_second": 10962.9,
+      "trainable_parameters": 9218
+    },
+    {
+      "system": "direct_classifier",
+      "device": "cpu",
+      "batch_size": 256,
+      "median_seconds_per_batch": 0.018031849999715632,
+      "ms_per_sample": 0.0704,
+      "rows_per_second": 14197.1,
+      "trainable_parameters": 9218
+    },
+    {
+      "system": "direct_classifier",
+      "device": "cpu",
+      "batch_size": 3372,
+      "median_seconds_per_batch": 0.20442510000020775,
+      "ms_per_sample": 0.0606,
+      "rows_per_second": 16495.0,
+      "trainable_parameters": 9218
+    },
+    {
+      "system": "direct_classifier",
+      "device": "cuda",
+      "batch_size": 1,
+      "median_seconds_per_batch": 0.0047011500000735396,
+      "ms_per_sample": 4.7012,
+      "rows_per_second": 212.7,
+      "trainable_parameters": 9218
+    },
+    {
+      "system": "direct_classifier",
+      "device": "cuda",
+      "batch_size": 16,
+      "median_seconds_per_batch": 0.005722450000121171,
+      "ms_per_sample": 0.3577,
+      "rows_per_second": 2796.0,
+      "trainable_parameters": 9218
+    },
+    {
+      "system": "direct_classifier",
+      "device": "cuda",
+      "batch_size": 64,
+      "median_seconds_per_batch": 0.010606499999994412,
+      "ms_per_sample": 0.1657,
+      "rows_per_second": 6034.0,
+      "trainable_parameters": 9218
+    },
+    {
+      "system": "direct_classifier",
+      "device": "cuda",
+      "batch_size": 256,
+      "median_seconds_per_batch": 0.024585149999893474,
+      "ms_per_sample": 0.096,
+      "rows_per_second": 10412.8,
+      "trainable_parameters": 9218
+    },
+    {
+      "system": "direct_classifier",
+      "device": "cuda",
+      "batch_size": 3372,
+      "median_seconds_per_batch": 0.24690724999982194,
+      "ms_per_sample": 0.0732,
+      "rows_per_second": 13657.0,
+      "trainable_parameters": 9218
+    },
+    {
+      "system": "gate_forward_only",
+      "device": "cpu",
+      "batch_size": 1,
+      "median_seconds_per_batch": 0.00039589999960298883,
+      "ms_per_sample": 0.3959,
+      "rows_per_second": 2525.9,
+      "trainable_parameters": 7041
+    },
+    {
+      "system": "gate_forward_only",
+      "device": "cpu",
+      "batch_size": 16,
+      "median_seconds_per_batch": 0.0006673500001852517,
+      "ms_per_sample": 0.0417,
+      "rows_per_second": 23975.4,
+      "trainable_parameters": 7041
+    },
+    {
+      "system": "gate_forward_only",
+      "device": "cpu",
+      "batch_size": 64,
+      "median_seconds_per_batch": 0.0008187499997802661,
+      "ms_per_sample": 0.0128,
+      "rows_per_second": 78167.9,
+      "trainable_parameters": 7041
+    },
+    {
+      "system": "gate_forward_only",
+      "device": "cpu",
+      "batch_size": 256,
+      "median_seconds_per_batch": 0.001129799999489478,
+      "ms_per_sample": 0.0044,
+      "rows_per_second": 226588.8,
+      "trainable_parameters": 7041
+    },
+    {
+      "system": "gate_forward_only",
+      "device": "cpu",
+      "batch_size": 3372,
+      "median_seconds_per_batch": 0.004268049999609502,
+      "ms_per_sample": 0.0013,
+      "rows_per_second": 790056.3,
+      "trainable_parameters": 7041
+    },
+    {
+      "system": "gate_forward_only",
+      "device": "cuda",
+      "batch_size": 1,
+      "median_seconds_per_batch": 0.0025120000000242726,
+      "ms_per_sample": 2.512,
+      "rows_per_second": 398.1,
+      "trainable_parameters": 7041
+    },
+    {
+      "system": "gate_forward_only",
+      "device": "cuda",
+      "batch_size": 16,
+      "median_seconds_per_batch": 0.0018141499999728694,
+      "ms_per_sample": 0.1134,
+      "rows_per_second": 8819.6,
+      "trainable_parameters": 7041
+    },
+    {
+      "system": "gate_forward_only",
+      "device": "cuda",
+      "batch_size": 64,
+      "median_seconds_per_batch": 0.002593300000171439,
+      "ms_per_sample": 0.0405,
+      "rows_per_second": 24679.0,
+      "trainable_parameters": 7041
+    },
+    {
+      "system": "gate_forward_only",
+      "device": "cuda",
+      "batch_size": 256,
+      "median_seconds_per_batch": 0.0010084999998980493,
+      "ms_per_sample": 0.0039,
+      "rows_per_second": 253842.3,
+      "trainable_parameters": 7041
+    },
+    {
+      "system": "gate_forward_only",
+      "device": "cuda",
+      "batch_size": 3372,
+      "median_seconds_per_batch": 0.00408285000048636,
+      "ms_per_sample": 0.0012,
+      "rows_per_second": 825893.7,
+      "trainable_parameters": 7041
+    }
+  ],
+  "gpu_rows": [
+    {
+      "system": "cross_attentive_gate",
+      "device": "cuda",
+      "peak_memory_mb": 42.874
+    },
+    {
+      "system": "residual_gate",
+      "device": "cuda",
+      "peak_memory_mb": 42.884
+    },
+    {
+      "system": "direct_classifier",
+      "device": "cuda",
+      "peak_memory_mb": 42.884
+    }
+  ],
+  "parameters": {
+    "lexical_only": {
+      "trainable_parameters": 106507,
+      "tfidf_vocab_size": 106506
+    },
+    "dns_behavior_only": {
+      "trainable_parameters": 13
+    },
+    "fixed_average": {
+      "trainable_parameters": 0
+    },
+    "cross_attentive_gate": {
+      "trainable_parameters": 7041
+    },
+    "residual_gate": {
+      "trainable_parameters": 9218
+    },
+    "direct_classifier": {
+      "trainable_parameters": 9218
+    },
+    "gate_forward_only": {
+      "trainable_parameters": 7041
+    }
+  },
+  "timing_protocol": "median wall-clock after warmup, CUDA-synchronized, consecutive-batch cycler",
+  "scope": "frozen-expert DeepURLBench pilot; latency is architecture-driven and does not change claim framing"
+}

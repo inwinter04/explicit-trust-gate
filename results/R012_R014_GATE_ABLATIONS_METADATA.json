@@ -1,0 +1,23 @@
+{
+  "generated_utc": "2026-08-19T04:02:11Z",
+  "script": "E:\\Desktop\\论文\\scripts\\run_deepurlbench_gate_ablations.py",
+  "script_sha256": "5a5a24f20a1636b6431933f233838e1279ff3d2fed11bf09e2308a57b80cc6c7",
+  "sample": "data\\interim\\deepurlbench\\deepurlbench_with_dns_time_sample.csv",
+  "sample_sha256": "1ca9821eedab736527038f7b3f99a27c55fbe54a6670f7bfa506efc8cce1c748",
+  "seeds": [
+    20260708,
+    20260709,
+    20260710
+  ],
+  "device": "cuda",
+  "validation_tuned_constant_gate": {
+    "g": 0.8300000000000001,
+    "val_AUPRC": 0.8722786928765376
+  },
+  "evaluation_type": "real_gt metrics; validation-only label-dependent oracle target for gate-supervision ablations",
+  "outputs": {
+    "metrics_csv": "refine-logs\\R012_R014_GATE_ABLATIONS_METRICS_20260819_040211.csv",
+    "diagnostics_csv": "refine-logs\\R012_R014_GATE_ABLATIONS_DIAGNOSTICS_20260819_040211.csv",
+    "bootstrap_csv": "refine-logs\\R012_R014_GATE_ABLATIONS_BOOTSTRAP_20260819_040211.csv"
+  }
+}

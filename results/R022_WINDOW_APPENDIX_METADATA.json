@@ -1,0 +1,70 @@
+{
+  "run": "R022",
+  "generated_at": "20260820_031638",
+  "input_files": [
+    "data\\raw\\2026-07-07\\leakage_audit.csv",
+    "data\\raw\\2026-07-07\\leakage_audit_followup_20260708_144803.csv",
+    "data\\raw\\2026-07-07\\leakage_audit_rdap_followup_20260708_001154.csv",
+    "data\\raw\\2026-07-07\\leakage_audit_rdap_followup_20260708_001735.csv"
+  ],
+  "input_sha256": {
+    "leakage_audit.csv": "324dfa9684fd4cab7c4810e090c75725c8282634416e93786837368877aab213",
+    "leakage_audit_followup_20260708_144803.csv": "01cacf47dfaa1f5197f86eefb891f995a4d70e5a12afc6239fa31b1eec14b5ae",
+    "leakage_audit_rdap_followup_20260708_001154.csv": "e17fefc1b55e6df08dc4fd9a84745da5db831f502e236497c20fa44eb4bf0a13",
+    "leakage_audit_rdap_followup_20260708_001735.csv": "12fa1fe01a2f95f5f80cfc4c25ea41cb5dfcaf2ba1bc78eaf2b05f9e4abff3e3"
+  },
+  "total_rows": 1520,
+  "windows": [
+    {
+      "window_hours": 24.0,
+      "inside_rows": 920,
+      "outside_rows": 600,
+      "availability": 0.6053
+    },
+    {
+      "window_hours": 24.5,
+      "inside_rows": 920,
+      "outside_rows": 600,
+      "availability": 0.6053
+    },
+    {
+      "window_hours": 25.0,
+      "inside_rows": 1520,
+      "outside_rows": 0,
+      "availability": 1.0
+    },
+    {
+      "window_hours": 72.0,
+      "inside_rows": 1520,
+      "outside_rows": 0,
+      "availability": 1.0
+    }
+  ],
+  "per_group_25h": [
+    {
+      "feature_group": "dns_a",
+      "inside_25h": 400,
+      "total": 400,
+      "availability_25h": 1.0
+    },
+    {
+      "feature_group": "dns_aaaa",
+      "inside_25h": 400,
+      "total": 400,
+      "availability_25h": 1.0
+    },
+    {
+      "feature_group": "dns_cname",
+      "inside_25h": 400,
+      "total": 400,
+      "availability_25h": 1.0
+    },
+    {
+      "feature_group": "rdap",
+      "inside_25h": 320,
+      "total": 320,
+      "availability_25h": 1.0
+    }
+  ],
+  "scope": "availability/latency analysis; per-feature AUPRC under strict 24h not reconstructable (initial values overwritten)"
+}

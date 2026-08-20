@@ -1,0 +1,55 @@
+{
+  "generated_utc": "2026-08-19T08:57:51Z",
+  "script": "E:\\Desktop\\论文\\scripts\\run_r015a_window_sensitivity_audit.py",
+  "script_sha256": "868b5f78fe02ecdf15e173266ad4de6328e56f79119b40e0f60410710364639e",
+  "prospective_dir": "data\\raw\\2026-07-07",
+  "source_files": [
+    {
+      "source_file": "leakage_audit.csv",
+      "rows": 640,
+      "missing_query_time": 0,
+      "min_hours_after_t0": 0.0053,
+      "max_hours_after_t0": 0.0614,
+      "sha256_16": "324dfa9684fd4cab"
+    },
+    {
+      "source_file": "leakage_audit_followup_20260708_144803.csv",
+      "rows": 600,
+      "missing_query_time": 0,
+      "min_hours_after_t0": 24.8683,
+      "max_hours_after_t0": 24.8903,
+      "sha256_16": "01cacf47dfaa1f51"
+    },
+    {
+      "source_file": "leakage_audit_rdap_followup_20260708_001154.csv",
+      "rows": 200,
+      "missing_query_time": 0,
+      "min_hours_after_t0": 10.2658,
+      "max_hours_after_t0": 10.4664,
+      "sha256_16": "e17fefc1b55e6df0"
+    },
+    {
+      "source_file": "leakage_audit_rdap_followup_20260708_001735.csv",
+      "rows": 80,
+      "missing_query_time": 0,
+      "min_hours_after_t0": 10.3606,
+      "max_hours_after_t0": 10.4372,
+      "sha256_16": "12fa1fe01a2f95f5"
+    }
+  ],
+  "windows_hours": [
+    24.0,
+    24.5,
+    25.0,
+    26.0
+  ],
+  "strict_24h_status": "fail",
+  "strict_24h_outside_rows": 600,
+  "first_passing_window_hours": "25",
+  "overall_verdict": "partial",
+  "claim_impact": {
+    "strict_24h": "failed historical evidence; do not describe existing R015 as passing strict 24h",
+    "amended_window": "a wider window can only support C2 after the paper protocol explicitly declares it and downstream analyses use it consistently",
+    "C2": "still not paper-supported until the amended provenance protocol and model-evaluation protocol are aligned"
+  }
+}
