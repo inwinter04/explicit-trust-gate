@@ -1,0 +1,7 @@
+error_type,primary_category,domain,label,g_cross_attentive_gate,p_lex,p_dns,p_cross_attentive_gate,expert_gap
+FP,FP_lexical_false_alarm,dw23.malavida.com,benign,1.0,0.9432,0.3314,0.9432,0.6118
+FP,FP_lexical_false_alarm,wefasr687.weebly.com,benign,1.0,0.946,0.3785,0.946,0.5676
+FP,FP_lexical_false_alarm,bets365br.com,benign,1.0,0.9554,0.4643,0.9554,0.4911
+FN,FN_gate_overtrusts_lexical,www.startw29s81q-nowfor29esa.regtvsh20.co.pl,malicious,1.0,0.0354,0.771,0.0354,0.7356
+FN,FN_lex_benign_shape,towww.dicemention.com,malicious,0.9999,0.0521,0.7786,0.0521,0.7265
+FN,FN_gate_overtrusts_lexical,doithe10s.com,malicious,1.0,0.106,0.6351,0.106,0.5292

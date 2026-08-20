@@ -1,0 +1,13 @@
+{
+  "run": "R030_GATE_AUDIT_USE_CASE",
+  "generated_at": "20260820_083230",
+  "inputs_sha256": {
+    "predictions": "794ccd29d20eebee9cfb29901edebbe8e6efb7be52a05fb48c2ab48f617f2154"
+  },
+  "seeds": [
+    20260819,
+    20260820,
+    20260821
+  ],
+  "scope": "non-training triage-use analysis over R024 predictions; precisions are alarm-tier statistics, not detection claims"
+}

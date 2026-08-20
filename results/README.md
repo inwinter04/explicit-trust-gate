@@ -18,5 +18,10 @@ research use.
 | `R024_SIMPLICITY_STABILITY_AGGREGATE.csv` + `R024_SIMPLICITY_STABILITY_METRICS.csv` + `R024_SIMPLICITY_STABILITY_METADATA.json` | Table 1 (main aggregate results) |
 | `R025_INDEPENDENT_CONFLICT_AGGREGATE.csv` + `R025_INDEPENDENT_CONFLICT_METRICS.csv` + `R025_INDEPENDENT_CONFLICT_METADATA.json` | Table 2 / Fig. 3 (conflict slices) |
 | `R026_DOMURLS_R025_FRONTIER_COMBINED.csv` + `R026_DOMURLS_R025_FRONTIER_METRICS.csv` + `R026_DOMURLS_R025_FRONTIER_METADATA.json` | Fig. 4 (lexical frontier) |
+| `R027_GATE_TRUST_ROUTING_METRICS.csv` + `R027_GATE_TRUST_ROUTING_METADATA.json` + `R027_GATE_TRUST_CASE_TABLE.csv` | Sec. 4.6 / Fig. 6 (g trust routing; case examples) |
+| `R028A_INFORMATIVE_SUBSET_AGGREGATE.csv` + `R028A_INFORMATIVE_SUBSET_METRICS.csv` + `R028A_INFORMATIVE_SUBSET_METADATA.json` | Sec. 4.6 / Table 4 (informative-behavior subsets) |
+| `R028B_PROSPECTIVE_INJECTION_METRICS.csv` + `R028B_PROSPECTIVE_INJECTION_METADATA.json` | Discussion / Fig. 7 / Table 7 (verified-timing controlled counterfactual) |
+| `R029_LOGISTIC_STACKING_METRICS.csv` + `R029_LOGISTIC_STACKING_METADATA.json` | Table 1 (classic fusion baseline) |
+| `R030_GATE_AUDIT_USE_CASE_AGGREGATE.csv` + `R030_GATE_AUDIT_USE_CASE_METRICS.csv` + `R030_GATE_AUDIT_USE_CASE_METADATA.json` | Discussion limitation 6 (g-conditioned alarm audit, null result) |
 | `PROSPECTIVE_GATE_METRICS.csv` + `PROSPECTIVE_GATE_METADATA.json` | Discussion (prospective lexical fallback) |
 | `EXPERIMENT_TRACKER.md` | Full experiment log (R001-R026 + prospective) |
